@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <path fill="#4d73e2" d="M20,40 h60 v30 a10,10 0 0 1 -10,10 h-40 a10,10 0 0 1 -10,-10 v-30 z" /> <!-- Head -->
+  <rect x="15" y="45" width="5" height="15" rx="2" fill="#4d73e2" /> <!-- Left Ear -->
+  <rect x="80" y="45" width="5" height="15" rx="2" fill="#4d73e2" /> <!-- Right Ear -->
+  <circle cx="35" cy="55" r="5" fill="white" /> <!-- Left Eye -->
+  <circle cx="65" cy="55" r="5" fill="white" /> <!-- Right Eye -->
+  <rect x="48" y="25" width="4" height="15" fill="#4d73e2" /> <!-- Antenna Stem -->
+  <circle cx="50" cy="25" r="5" fill="#4d73e2" /> <!-- Antenna Ball -->
+</svg>

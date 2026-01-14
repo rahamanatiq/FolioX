@@ -1,16 +1,73 @@
-# React + Vite
+# AtiQ's Portfolio (FolioX)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is an interactive portfolio website for an AI Developer. This project blends advanced web technologies with practical AI integration to demonstrate technical expertise in a visually stunning way.
 
-Currently, two official plugins are available:
+## 🚀 Concept & Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
+This portfolio is designed to be an immersive experience that acts as a live demonstration of my skills in AI, Frontend & Backend Engineering.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Key Features:
+*   **🤖 Integrated AI Chatbot**:
+    *   Powered by **Google Gemini 2.5 Flash** (via `@google/generative-ai`).
+    *   Context-aware: The bot is "trained" on Atiq's specific resume data (skills, projects, experience).
+    *   Interactive: Floats as a chat bubbles, fully responsive, with a "pulse" animation indicating active status.
+    *   **Tech**: Custom React component, Markdown rendering support.
+      
+*   **📱 Fully Responsive Design**:
+    *   Mobile-first approach.
+    *   Chatbot and layout adapt intelligently to all screen sizes.
+      
+*   **🎨 Modern Aesthetic**:
+    *   "Claymorphism" and "Glassmorphism" inspired design elements.
+    *   Clean, typography-driven layout (Inter font family).
+    *   Consistent "Blue" brand identity across favicons, buttons, and accents.
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This project is built with a modern, performance-focused stack:
+
+### Core Framework
+*   **[React 19](https://react.dev/)**: The latest version of the library for web user interfaces.
+*   **[Vite](https://vitejs.dev/)**: Next-generation frontend tooling for lightning-fast builds.
+
+### Artificial Intelligence
+*   **[Google Generative AI SDK](https://www.npmjs.com/package/@google/generative-ai)**: Direct integration with the Gemini API for the chatbot functionality.
+
+### Styling & Icons
+*   **CSS Modules / Global CSS**: Custom handcrafted styles for glassmorphism and layout.
+*   **[React Icons](https://react-icons.github.io/react-icons/)**: Comprehensive icon library.
+*   **[React Markdown](https://github.com/remarkjs/react-markdown)**: For rendering rich text responses from the AI.
+
+## 📦 Installation & Setup
+
+1.  **Clone the repository**
+    ```bash
+    git clone https://github.com/rahamanatiq/FolioX.git
+    cd FolioX
+    ```
+
+2.  **Install Dependencies**
+    ```bash
+    npm install
+    ```
+
+3.  **Environment Configuration**
+    *   Create a `.env` file in the root directory.
+    *   Add your Google Gemini API key:
+        ```env
+        VITE_GEMINI_API_KEY=your_actual_api_key_here
+        ```
+
+4.  **Run Development Server**
+    ```bash
+    npm run dev
+    ```
+    Open `http://localhost:5173` to view it in the browser.
+
+## 🚀 Deployment (Vercel)
+
+This project has been deployed on Vercel.
+### Visit: rahmanatiq.vercel.app
+---
+by Atiqur Rahman*

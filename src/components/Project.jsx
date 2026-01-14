@@ -9,27 +9,32 @@ const Project = () => {
         {
             title: "Question Pair Similarity",
             image: "/assets/projects/question_pair_new.jpg",
-            description: "End-to-end semantic similarity system built with Siamese-LSTM, ANN, and Transformers."
+            description: "End-to-end semantic similarity system built with Siamese-LSTM, ANN, and Transformers.",
+            tools: ["Python", "NLP", "Siamese LSTM", "ANN", "Transformer Model"]
         },
         {
             title: "Bilingual Chatbot",
             image: "/assets/projects/chatbot_new.jpg",
-            description: "PDF-based RAG assistant supporting English and Bangla using Langchain and Gemini."
+            description: "PDF-based RAG assistant supporting English and Bangla using Langchain and Gemini.",
+            tools: ["Python", "RAG", "FASTAPI", "LangChain", "FAISS"]
         },
         {
             title: "Tesla Stock Forecasting",
             image: "/assets/projects/tesla_new.jpg",
-            description: "Comprehensive forecasting pipeline using ARIMA and LSTM with rolling metrics."
+            description: "Comprehensive forecasting pipeline using ARIMA and LSTM with rolling metrics.",
+            tools: ["Python", "ARIMA", "RNN", "LSTM"]
         },
         {
-            title: "RAG with FastAPI",
+            title: "RAG",
             image: "/assets/projects/rag_new.png",
-            description: "FastAPI-powered RAG system using Google Gemini and FAISS for document indexing."
+            description: "FastAPI-powered RAG system using Google Gemini and FAISS for document indexing.",
+            tools: ["FASTAPI", "Google Gemini", "LangChain", "FAISS"]
         },
         {
-            title: "Rock Paper Scissors",
+            title: "Rock Paper Scissor",
             image: "/assets/projects/rps_new.png",
-            description: "Interactive Python game featuring a Tkinter GUI and real-time result tracking."
+            description: "Interactive Python game featuring a Tkinter GUI and real-time result tracking.",
+            tools: ["Python", "Tkinter GUI"]
         }
     ];
 
@@ -90,6 +95,7 @@ const Project = () => {
 
     return (
         <div id="project" style={{
+            scrollMarginTop: '80px',
             minHeight: 'auto', // Removed 100vh constraint
             width: '100%',
             padding: '4rem 5% 2rem', // Reduced padding
@@ -123,7 +129,7 @@ const Project = () => {
                     margin: 0,
                     maxWidth: '900px'
                 }}>
-                    <h5>See what I have accomplished so far!</h5>
+                    See what I have <span style={{ color: '#4d73e2' }}>Accomplished</span> so far!
                 </h2>
             </div>
 
@@ -379,22 +385,24 @@ const Project = () => {
                                             marginTop: 'auto',
                                             alignSelf: 'flex-start'
                                         }}>
-                                            <a
-                                                href={item.link || "#"}
-                                                target={item.link ? "_blank" : "_self"}
-                                                rel="noopener noreferrer"
-                                                style={{
-                                                    fontSize: '0.9rem',
-                                                    fontWeight: '600',
-                                                    color: '#4d73e2',
-                                                    display: 'flex',
-                                                    alignItems: 'center',
-                                                    gap: '0.5rem',
-                                                    textDecoration: 'none',
-                                                    cursor: item.link ? 'pointer' : 'default'
-                                                }}>
-                                                {item.link ? "Book Details" : "View Details"} <span>→</span>
-                                            </a>
+                                            {item.link && (
+                                                <a
+                                                    href={item.link}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    style={{
+                                                        fontSize: '0.9rem',
+                                                        fontWeight: '600',
+                                                        color: '#4d73e2',
+                                                        display: 'flex',
+                                                        alignItems: 'center',
+                                                        gap: '0.5rem',
+                                                        textDecoration: 'none',
+                                                        cursor: 'pointer'
+                                                    }}>
+                                                    {item.title.includes("Sentiment") ? "Book Details" : "View Project"} <span>→</span>
+                                                </a>
+                                            )}
                                         </div>
                                     </div>
                                 </div>

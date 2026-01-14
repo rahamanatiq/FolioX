@@ -55,6 +55,7 @@ const Contact = () => {
 
     return (
         <div id="contact" style={{
+            scrollMarginTop: '80px',
             minHeight: 'auto', // Compact height
             width: '100%',
             padding: '3rem 15px 2rem', // Balanced padding

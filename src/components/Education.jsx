@@ -31,6 +31,7 @@ const Education = () => {
 
     return (
         <div id="education" style={{
+            scrollMarginTop: '80px',
             minHeight: 'auto', // Removed fixed height
             width: '100%',
             padding: '4rem 5% 2rem', // Adjusted padding

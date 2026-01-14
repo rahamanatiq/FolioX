@@ -42,7 +42,7 @@ const skillsData = [
 const Skills = () => {
     return (
         <div id="skills" style={{
-            height: '100vh',
+            height: '80vh',
             width: '100%',
             padding: '15vh 5% 0', // Pulled up significantly
             background: 'white',
@@ -77,7 +77,7 @@ const Skills = () => {
                     margin: 0,
                     maxWidth: '800px'
                 }}>
-                    A foundation built on Technical Rigor<br />and Algorithmic Thinking
+                    A foundation built on <span style={{ color: '#4d73e2' }}>Technical Rigor</span><br />and <span style={{ color: '#4d73e2' }}>Algorithmic Thinking</span>
                 </h2>
             </div>
 
